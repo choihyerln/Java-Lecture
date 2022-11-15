@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Ex08_ReadLine {
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader("/Users/choihyerin/Desktop/IO/test.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("/tmp/test.txt"));
 		
 		int lineNo = 1;
 		while (true) {

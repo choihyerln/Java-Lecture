@@ -14,12 +14,12 @@ public class Ex07_BufferedIO {
 	public static void main(String[] args) throws IOException {
 		
 		// case1 입출력 스트림으로 복사
-		FileInputStream fis = new FileInputStream("/Users/choihyerin/Downloads/IMG_0328 2.jpg");
-		FileOutputStream fos = new FileOutputStream("/Users/choihyerin/Downloads/IMG_0328 2 복사본.jpg");
+		FileInputStream fis = new FileInputStream("/tmp/IMG_0328 2.jpg");
+		FileOutputStream fos = new FileOutputStream("/tmp/IMG_0328 2 2.jpg");
 		
 		// case2 입출력 스트림 + 버퍼 스트림으로 복사
-		FileInputStream fis2 = new FileInputStream("/Users/choihyerin/Downloads/IMG_0328 2.jpg");
-		FileOutputStream fos2 = new FileOutputStream("/Users/choihyerin/Downloads/IMG_0328 2 복사본.jpg");
+		FileInputStream fis2 = new FileInputStream("/tmp/IMG_0328 2.jpg");
+		FileOutputStream fos2 = new FileOutputStream("/tmp/IMG_0328 2 2.jpg");
 		BufferedInputStream bis = new BufferedInputStream(fis2);
 		BufferedOutputStream bos = new BufferedOutputStream(fos2);
 		
@@ -40,8 +40,9 @@ public class Ex07_BufferedIO {
 		bis.close();
 		bos.close();
 	}
-	public static long copy(InputStream is, OutputStream os) throws IOException{
+	public static long copy(InputStream is, OutputStream os) throws IOException {
 		long startTime = System.nanoTime();
+		// 1 바이트 단위로 읽고 쓰기
 		while (true) {
 			int data = is.read();
 			if (data == -1)
@@ -50,6 +51,6 @@ public class Ex07_BufferedIO {
 		}
 		os.flush();
 		long endTime = System.nanoTime();
-		return 0L;
+		return endTime - startTime;
 	}
 }

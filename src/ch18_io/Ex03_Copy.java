@@ -13,8 +13,8 @@ import java.io.OutputStream;
 public class Ex03_Copy {
 
 	public static void main(String[] args) throws IOException {
-		String srcFile = "/Users/choihyerin/Downloads/IMG_0328 2.jpg";
-		String dstFile = "/Tmp/IMG_0328 2.jpg";
+		String srcFile = "/tmp/IMG_0328 2.jpg";
+		String dstFile = "/tmp/IMG_0328 2 2.jpg";
 		
 			InputStream is = new FileInputStream(srcFile);
 			OutputStream os = new FileOutputStream(dstFile);
