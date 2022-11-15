@@ -1,4 +1,4 @@
-package hyerinPractice;
+package exercise;
 
 public class Q02_Member {
 	private String id;

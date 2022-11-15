@@ -1,4 +1,4 @@
-package hyerinPractice;
+package exercise;
 
 public class p1_ArrayFor {
 

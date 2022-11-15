@@ -1,4 +1,4 @@
-package hyerinPractice;
+package exercise;
 
 import java.util.Arrays;
 /**
