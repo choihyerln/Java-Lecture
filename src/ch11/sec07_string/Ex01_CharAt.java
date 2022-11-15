@@ -9,7 +9,7 @@ public class Ex01_CharAt {
 		System.out.println(str1.charAt(3));		// u
 		System.out.println(str2.charAt(3));		// 프
 		
-		String ssn = "971227-2358215";
+		String ssn = "900000-1234567";
 		char gender = ssn.charAt(7);		// charAt 자릿수 찾는 메소드(함수)
 		switch(gender) {
 		case '1':

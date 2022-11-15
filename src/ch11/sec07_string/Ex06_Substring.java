@@ -3,7 +3,7 @@ package ch11.sec07_string;
 public class Ex06_Substring {
 
 	public static void main(String[] args) {
-		String ssn = "971227-2358215";
+		String ssn = "900000-1234567";
 		
 //		String firstPart = ssn.substring(0, 6);
 //		System.out.println(firstPart);

@@ -6,7 +6,7 @@ public class Ex01_Pattern {
 
 	public static void main(String[] args) {
 		String regExp = "010-\\d{3,4}-\\d{4}";		// 이동전화번호
-		String data1 = "02-9711-6545";
+		String data1 = "02-1234-5678";
 		String data2 = "010-234-6789";
 		boolean result1 = Pattern.matches(regExp, data1);
 		boolean result2 = Pattern.matches(regExp, data2);
