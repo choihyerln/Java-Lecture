@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class ObjectStream {
 
 	public static void main(String[] args) throws Exception {
-		FileOutputStream fos = new FileOutputStream("/Users/choihyerin/Desktop/IO/object.dat");
+		FileOutputStream fos = new FileOutputStream("/tmp/object.dat");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		
 		Member m1 = new Member("fall", "단풍이");
@@ -23,7 +23,7 @@ public class ObjectStream {
 		oos.close();
 		fos.close();
 		
-		FileInputStream fis = new FileInputStream("/Users/choihyerin/Desktop/IO/object.dat");
+		FileInputStream fis = new FileInputStream("/tmp/object.dat");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
 		Member m2 = (Member) ois.readObject();
@@ -34,7 +34,5 @@ public class ObjectStream {
 		System.out.println(m2);
 		System.out.println(p2);
 		System.out.println(Arrays.toString(arr2));
-
 	}
-
 }
