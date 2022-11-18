@@ -12,6 +12,11 @@ public class Customer {
 	private int isDeleted;
 	
 	Customer() {}
+	Customer(String uid, String name) {
+		super();
+		this.uid = uid;
+		this.name = name;
+	}
 	Customer(String uid, String name, LocalDate regDate, int isDeleted) {
 		super();
 		this.uid = uid;
