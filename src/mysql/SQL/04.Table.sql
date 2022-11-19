@@ -24,7 +24,7 @@ CREATE TABLE if not exists addrBook (
 	birthday DATE
 ) AUTO_INCREMENT = 101;
 
-# 주소록 테이블 생성
+# 고객 테이블 생성
 CREATE TABLE if not exists customer (
 	uid VARCHAR(10) PRIMARY KEY,
 	pwd CHAR(44) NOT NULL,		# 암호화한 결과를 저장
