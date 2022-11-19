@@ -15,7 +15,7 @@ public class Ex32_Main {
 			System.out.println("-------------------------------------------");
 			System.out.print("선택> ");
 			
-			int selectNo = Integer.parseInt(scan.nextLine());
+			int selectNo = Integer.parseInt(scan.nextLine());	// int는 Integer.parseInt(scan.nextLine()), String은 scan.nextLine()
 			
 			if (selectNo == 1) {
 				createAccount();
@@ -46,14 +46,13 @@ public class Ex32_Main {
 		System.out.println("------------");
 		
 		String ano = (1001 + index) + "";
-		System.out.print("계좌주: ");
+		System.out.print("계좌주 이름: ");
 		String owner = scan.nextLine();
-		System.out.print("초기입금액: ");
+		System.out.print("초기 입금액: ");
 		int balance = Integer.parseInt(scan.nextLine());
 		
 		accountArray[index++] = new Ex32_Account(ano, owner, balance);
-		System.out.println("결과: 계좌가 생성되었습니다.");
-		
+		System.out.println("계좌가 생성되었습니다.");
 	}
 	
 	// 계좌목록보기
@@ -67,9 +66,7 @@ public class Ex32_Main {
 			System.out.printf("%8s", accountArray[i].getAno());
 			System.out.printf("%8s", accountArray[i].getOwner());
 			System.out.printf("%12d%n", accountArray[i].getBalance());
-
 		}
-		
 	}
 	
 	// 예금하기
@@ -91,7 +88,6 @@ public class Ex32_Main {
 		
 		account.setBalance(account.getBalance() + amount);
 		System.out.println("입금이 완료되었습니다.");
-		
 	}
 	
 	// 출금하기
@@ -118,12 +114,10 @@ public class Ex32_Main {
 		}
 		else
 			System.out.println("잔액이 부족합니다.");
-		
-	}
+		}
 	
 	//Account 배열에서 ano와 동일한 Account 객체 찾기
 	private static Ex32_Account findAccount(String ano) {
-		
 		for (Ex32_Account acc : accountArray) {
 			if (acc == null)
 				break;
@@ -131,7 +125,5 @@ public class Ex32_Main {
 				return acc;
 		}
 		return null;		
-		}
-			
+		}	
 	}
-

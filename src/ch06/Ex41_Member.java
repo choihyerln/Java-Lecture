@@ -41,7 +41,4 @@ public class Ex41_Member {
 	public String toString() {
 		return "Ex41_Member [id=" + id + ", password=" + password + ", name=" + name + "]";
 	}
-	
-	
-
 }

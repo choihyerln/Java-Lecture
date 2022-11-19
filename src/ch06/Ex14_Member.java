@@ -7,7 +7,7 @@ public class Ex14_Member {
 	private int age;
 	
 	public Ex14_Member() {}
-	public Ex14_Member(String uid, String name, String password, String age);{
+	public Ex14_Member(String uid, String name, String password, int age) {
 		super();
 		this.uid =uid;
 		this.name = name;

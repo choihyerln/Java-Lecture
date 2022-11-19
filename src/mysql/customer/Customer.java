@@ -1,7 +1,6 @@
 package mysql.customer;
 
 import java.time.LocalDate;
-
 /**
  * DTO (Data Transfer Object)
  */

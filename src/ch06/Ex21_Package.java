@@ -8,7 +8,7 @@ public class Ex21_Package {
 
 	public static void main(String[] args) {
 		LocalDate a = LocalDate.now();
-		ch04.Ex24_Diamond diamond = new Ex24_Diamond();
+		Ex24_Diamond diamond = new Ex24_Diamond();
 	}
 
 }
