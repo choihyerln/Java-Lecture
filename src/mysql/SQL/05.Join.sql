@@ -89,7 +89,7 @@ SELECT l.name, r.title, l.debut FROM girlGroup AS l
 
 # 2007년도에 데뷔한 걸그룹은?
 SELECT name, debut FROM girlGroup
-	WHERE debut BETWEEN ('2007-01-01') AND ('2007-12-31');
+	WHERE debut BETWEEN DATE('2007-01-01') AND DATE('2007-12-31');
 (바람직한 방법은 아니지만 사용은 할 수 있음)
 SELECT name, debut FROM girlGroup
 	WHERE debut LIKE '2007%';
@@ -99,3 +99,15 @@ SELECT l.name, l.debut, r.title FROM girlGroup AS l
 	JOIN song AS r
 	ON l.hitSongId = r.sid
 	WHERE debut BETWEEN DATE('2009-01-01') AND DATE('2009-12-31');
+
+# 뉴진스의 히트곡명은? 
+SELECT r.gname, l.sname, FROM hitSong AS l
+	JOIN girlGroup AS r
+	ON l.gid = r.gid
+	WHERE r.gname = '뉴진스';
+
+# 2018년도 데뷔 걸그룹의 히트곡은? (걸그룹명, 곡명, 데뷔일)
+SELECT r.gname, l.sname, r.debut FROM hitSong AS l
+	JOIN girlGroup AS r
+	ON l.gid = r.gid
+	WHERE debut BETWEEN DATE '2018-01-01' AND DATE '2018-12-31';
