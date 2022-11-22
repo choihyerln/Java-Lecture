@@ -1,4 +1,4 @@
-package mysql.erd.bbs;
+package mysql.bbs;
 
 import java.util.List;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package mysql.erd.bbs;
+package mysql.bbs;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
