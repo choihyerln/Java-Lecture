@@ -29,7 +29,7 @@ public class Board implements Serializable {
 	private Users users;
 
 	/** 글쓴 시간. */
-	private Date modetime;
+	private Date modtime;
 
 	/** 조회수. */
 	private Integer viewcount;
@@ -126,11 +126,11 @@ public class Board implements Serializable {
 	/**
 	 * 글쓴 시간을 설정합니다..
 	 * 
-	 * @param modetime
+	 * @param modtime
 	 *            글쓴 시간
 	 */
-	public void setModetime(Date modetime) {
-		this.modetime = modetime;
+	public void setModtime(Date modtime) {
+		this.modtime = modtime;
 	}
 
 	/**
@@ -138,8 +138,8 @@ public class Board implements Serializable {
 	 * 
 	 * @return 글쓴 시간
 	 */
-	public Date getModetime() {
-		return this.modetime;
+	public Date getModtime() {
+		return this.modtime;
 	}
 
 	/**
