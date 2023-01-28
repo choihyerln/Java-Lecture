@@ -8,7 +8,7 @@ public class App {
 	private static Scanner scan = new Scanner(System.in);
 	private static DAO dao = new DAO();
 	
-	
+	/* 초기 화면 */
 	public static void main(String[] args) {
 		boolean run = true;
 		while (run) {
@@ -44,6 +44,7 @@ public class App {
 		for (Player p: list)
 			System.out.println(p);
 	}
+	/* 선수 등록 */
 	public static void registerPlayer() {
 		int bNum;
 		while (true) {
@@ -67,6 +68,8 @@ public class App {
 		dao.insertPlayer(np);
 		System.out.println("선수 등록이 완료되었습니다.");
 	}
+	
+	/* 선수 정보 수정 */
 	public static void updatePlayer() {
 		System.out.print("선수 등번호> ");
 		int bNum = Integer.parseInt(scan.nextLine());
@@ -92,6 +95,8 @@ public class App {
 		dao.updatePlayer(p);
 		System.out.println("선수 정보 수정이 완료되었습니다.");
 	}
+	
+	/* 선수 방출 */
 	public static void deletePlayer() {
 		System.out.print("선수 등번호> ");
 		int bNum = Integer.parseInt(scan.nextLine());
